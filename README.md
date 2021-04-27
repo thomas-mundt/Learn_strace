@@ -39,7 +39,18 @@ root@node01:~# strace -cw touch file.txt
 
 ```
 ps aux | grep etcd
-#get the pid in the ps aux output
+# get the pid in the ps aux output
 
 strace -p 2334
+```
+
+
+## List all open files for a running process
+
+```
+ps aux | grep etcd
+# get the pid in the ps aux output
+
+cd /proc/2621/fd
+ls -al
 ```
