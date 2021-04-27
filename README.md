@@ -33,3 +33,9 @@ root@node01:~# strace -cw touch file.txt
 ------ ----------- ----------- --------- --------- ----------------
 100.00    0.002001                    36         3 total
 ```
+
+
+ps aux | grep etcd
+#get the pid in the ps aux output
+
+strace -p 2334
