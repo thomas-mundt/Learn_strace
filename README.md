@@ -35,7 +35,11 @@ root@node01:~# strace -cw touch file.txt
 ```
 
 
+## Get the syscalls for a running process
+
+```
 ps aux | grep etcd
 #get the pid in the ps aux output
 
 strace -p 2334
+```
